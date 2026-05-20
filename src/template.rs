@@ -238,7 +238,7 @@ pub fn build_template(location: Option<PathBuf>) {
 		config.save();
 	}
 
-	let final_description = ask_value("Description", None, false);
+	let final_description = ask_value("Description", None, true);
 	let final_location = PathBuf::from(ask_value(
 		"Location",
 		Some(&location.to_string_lossy()),
